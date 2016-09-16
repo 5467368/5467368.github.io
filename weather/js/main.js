@@ -59,7 +59,7 @@ var app = angular.module('weatherManager', []);
         return {
             getWeatherByName: function (name) {
                 return (
-                    $http.get('https://api.openweathermap.org/data/2.5/weather?q=' + name + '&units=metric&lang=ru&APPID=e0eaea3ec4d3f4f6451cc6bd3e2102de')
+                    $http.get('http://api.openweathermap.org/data/2.5/weather?q=' + name + '&units=metric&lang=ru&APPID=e0eaea3ec4d3f4f6451cc6bd3e2102de')
                         .then(
                             function (response) {
                                 return response.data;
@@ -71,7 +71,7 @@ var app = angular.module('weatherManager', []);
             },
             getWeatherByID: function (id) {
                 return (
-                    $http.get('https://api.openweathermap.org/data/2.5/weather?id=' + id + '&units=metric&lang=ru&APPID=e0eaea3ec4d3f4f6451cc6bd3e2102de')
+                    $http.get('http://api.openweathermap.org/data/2.5/weather?id=' + id + '&units=metric&lang=ru&APPID=e0eaea3ec4d3f4f6451cc6bd3e2102de')
                         .then(
                             function (response) {
                                 return response.data;
