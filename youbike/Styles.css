@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/helveticaneuecyr-light-webfont.eot');
+    src: url('fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+         url('fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	font-family: "Helvetica Neue", Arial;
+}
+.page{
+	margin: 0 auto;
+	width: 100%;
+	height: 1064px;
+	background: url("img/background_big.jpg");
+	background-size: cover;
+}
+.top{
+	height: 36px;
+	background: #074e8b;
+}
+.mainBody{
+	
+	width: 100%;
+	height: 1028px;
+}
+ul{
+	list-style: none;
+	margin-right: 15px;
+}
+li{
+	float: right;
+}
+li a{
+	text-decoration: none;
+	display: block;
+	height: 28px;
+	color: rgb(96, 181, 237);
+	font-size: 14px;
+	text-align: center;
+	padding: 8px 15px 0 15px;
+	/*padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 8px;*/
+}
+li a:hover{
+	background-color: rgba(78, 171, 218, 0.5);
+	color: white;
+	/*font-weight: bold;*/
+}
+li img{
+	margin-top: 5px;
+	padding-left: 15px;
+	border-left: 1px solid rgb(96, 181, 237);
+}
+.Ajuda{
+	margin-right: 5px;
+	max-width: 36px;
+}
+.Minhas{
+	padding-left: 10px;
+	color: white;
+}
+.Ola{
+	color: white;
+}
+/*.Contato{
+	max-width: 50px;
+}
+.Forum{
+	max-width: 42px;
+}
+.YouBike{
+	max-width: 90px;
+}
+.Vender{
+	max-width: 46px;
+}*/
+.form{
+	width: 560px;
+  	height: 602px;
+  	background-color: rgba(0, 0, 0, 0.631);
+  	/*position: absolute;
+  	left: 327px;
+  	top: 207px;*/
+  	margin: 0 auto;
+  	position: relative;
+  	top: 206px;
+}  	
+ .formTop{
+	font-size: 24px;
+	text-align: center;
+	color: white;
+	height: 44px;
+	border-bottom: 2px solid gray;
+	padding-top: 21px;
+}
+.facebook{
+	display: block;
+	margin: 0 auto;
+	height: 35px;
+	width: 276px;
+	margin-top: 30px;
+}
+.OU fieldset{
+	border-width: 1px 0 0 0;
+	margin: 20px auto;
+	color: rgb(153, 153, 153);
+	font-size: 14px;
+	text-align: center;
+	width: 276px;
+}
+
+.fields input{
+	display: block;
+	margin: 0 auto;
+	width: 261px;
+	height: 35px;
+	font-size: 14px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 0px;
+	margin-bottom: 17px;
+	color: gray;
+	padding-left: 15px;
+}
+.fields input:hover{
+	background-color: #1b5288;
+	box-shadow: 0 0 8px 4px rgba(47, 123, 197, 1);
+}
+.checkbox{
+	display: block;
+	color: white;
+	font-size: 14px;
+	margin: 0 auto;
+	width: 276px;
+	height: 35px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+button{
+	display: block;
+	margin: 0 auto;
+	height: 37px;
+	font-size: 14px;
+	width: 151px;
+	background: #3889cb;
+	border-width: 0;
+	color: white;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.text{
+	font-size: 11px;
+	color: gray;
+	text-align: center;
+	margin-top: 20px;
+}

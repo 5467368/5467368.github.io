@@ -1,0 +1,80 @@
+//SCSS File
+.articles-section {
+    position: absolute;
+    top: 750px;
+    height: 200px;
+}
+.articles {
+    display: inline-block;
+    height: inherit;
+    width: 360px;
+    position: relative;
+
+    .numbers {
+        font-size: 85px;
+        font-family: "Ubuntu", Arial;
+        color: rgba(42, 43, 46, 0.102);
+        line-height: 0.222;
+        text-align: left;
+        display: inline-block;
+        height: inherit;
+        margin-right: 24px;
+        font-weight: 600;
+        float: left;
+        top: 21px;
+        position: relative;
+    }
+    p {
+        font-size: 20px;
+        font-family: "Ubuntu";
+        color: rgb(42, 43, 46);
+        font-weight: 600;
+        position: relative;
+        top: -13px;
+        left: 4px;
+    }
+    span {
+        font-size: 13px;
+        font-family: "Arial";
+        color: rgb(138, 138, 138);
+        text-align: left;
+        position: relative;
+        top: -2px;
+    }
+    a {
+        font-size: 13px;
+        font-family: "Ubuntu";
+        color: rgb(42, 43, 46);
+        text-align: left;
+        font-weight: 600;
+        text-decoration: none;
+        position: relative;
+        top: 9px;
+    }
+    a:hover {
+        color: rgb(36, 140, 236);
+    }
+}
+.article-sprite {
+    width: 34px;
+    height: 50px;
+    background: url("../img/sprite.png") left no-repeat;
+    display: inline-block;
+    position: relative;
+    top: -11px;
+    right: -4px;
+}
+.article-one,
+.article-two {
+    margin-right: 36px;
+}
+.article-two {
+    .article-sprite {
+        background: url("../img/sprite.png") -33px no-repeat;
+    }
+}
+.article-three {
+    .article-sprite {
+        background: url("../img/sprite.png") -66px no-repeat;
+    }
+}

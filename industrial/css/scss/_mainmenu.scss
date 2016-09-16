@@ -1,0 +1,75 @@
+//SCSS File
+$menuHeight: 56px;
+
+.main-menu {
+    background: #2a2d32;
+    width: 1160px;
+    height: $menuHeight;
+    position: absolute;
+    top: 110px;
+
+    ul {
+        list-style: none;
+        display: inline-block;
+    }
+    li {
+        display: inline-block;
+        width: 114px;
+        line-height: $menuHeight;
+        border-right: 1px solid #181a1d;
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-family: "Ubuntu Condensed", $fontStyle;
+        display: block;
+    }
+    .menu-home {
+        background: #248cec;
+    }
+    a:hover {
+        color: rgb(244, 182, 13);
+    }
+}
+.search-form {
+    width: 243px;
+    height: 42px;
+    border: 1px solid rgb(24, 26, 29);
+    background: #35383c ;
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    margin-top: ($menuHeight - 42px - 2px) / 2 ;
+    border-radius: 2px;
+
+    input {
+        width: 215px;
+        height: 42px;
+        border: 1px solid rgb(24, 26, 29);
+        box-sizing: border-box;
+        border: none;
+        color: #cccccc;
+        background: #35383c;
+        padding-left: 15px;
+
+    }
+    input:focus {
+        outline: none;
+    }
+    a {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: url("../img/search.png") no-repeat #35383c ;
+        position: absolute;
+        top: 21px;
+        right: 16px;
+    }
+    //
+    //border: 1px solid #248cec;
+}
+.search-form:hover {
+    border-color: #248cec;
+}

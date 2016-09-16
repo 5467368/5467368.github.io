@@ -1,0 +1,39 @@
+//SCSS File
+$radio: 10px;
+
+.slider {
+    position: relative;
+    top: 205px;
+    height: 471px;
+    width: 1160px;
+    overflow: hidden;
+
+    ul {
+        list-style: none;
+    }
+    li {
+        float: left;
+    }
+}
+.slider-list {
+    width: 5000px;
+    position: relative;
+}
+.radio {
+    position: absolute;
+    top: 430px;
+    left: 550px;
+
+    li {
+        cursor: pointer;
+        display: inline-block;
+        width: $radio;
+        height: $radio;
+        background-color: white;
+        border: 3px solid white;
+        margin-right: $radio * 1.5;
+    }
+    .radio-selected {
+        background-color: black;
+    }
+}

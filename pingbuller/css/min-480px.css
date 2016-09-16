@@ -1,0 +1,382 @@
+@media (min-width: 480px) and (max-width: 767px){
+.wraper{
+	max-width: 767px;
+}
+.page{
+	width: 480px;
+}
+.bg_1{
+	height: 800px;
+}
+.top_slider_bg{
+    height: 246px;
+    top: 202px;
+}
+.bg_2{
+	height: 598px;
+	top: 549px;
+}
+.bg_3{
+	height: 790px;
+	top: 1147px;
+}
+.bg_4{
+	height: 234px;
+	top: 1933px;
+}
+.bg_5{
+	top: 2165px;
+	height: 670px;
+}
+.bg_footer{
+	top: 2836px;
+	height: 200px;
+	background: url('../img/bottom_768.jpg') no-repeat bottom center;
+}
+
+/*HEADER*/
+.header{
+	margin: 61px auto 0px auto;
+	text-align: center;
+	width: 245px;
+}
+.pingbuller{
+	display: inline-block;
+}
+
+/*MAIN MENU*/
+.main_menu{
+
+}
+.main-menu{
+	margin: 0 auto;
+	height: 40px;
+	width: 50px;
+	border: 1px transparent;
+	position: relative;
+	overflow: hidden;
+  z-index: 10;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+}
+.main-menu:hover{
+	height: 256px;
+	width: 242px;
+	border: 1px black solid;
+	border-radius: 10px;
+	background-color: rgba(63, 51, 72, 0.9);
+}
+
+.main-menu li{
+	height: 32px;
+	padding-top: 8px;
+	width: auto;
+	border-bottom: 2px solid rgba(82, 62, 90, 0.9);
+	text-align: center;
+
+}
+.main-menu .dolor{
+	border-bottom: none;
+}
+.main-menu a{
+  	width: 245px;
+  	height: 42px;
+}
+.main-menu .home a{
+	border-bottom: 2px solid rgb(237, 191, 255);
+}
+.main-menu li:hover{
+	border-bottom: 2px solid rgb(237, 191, 255);
+	background: rgba(43, 34, 49, 0.3);
+	width: auto;
+}
+
+/*SLIDER*/
+.top_slider{
+	height: 361px;
+	background: url('../img/iphone_480.png') right no-repeat;
+	position: absolute;
+	top: 53px;
+	left: ;
+	margin: 49px 0px 0 0px;
+	width: 448px;
+}
+.ts_article{
+	float: left;
+  	margin: 139px 0px 0 39px;
+  	width: 275px;
+  	height: 184px;
+
+}
+.ts_header{
+	font-size: 35px;
+  	font-family: "LeagueGothic";
+  	color: rgb(254, 254, 254);
+  	line-height: 0.6;
+ 	text-align: left;
+  	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.ts_subheader{
+	font-size: 18px;
+  	font-family: "LeagueGothic";
+  	color: #edbfff;
+  	line-height: 0.6;
+ 	text-align: left;
+  	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  	margin: 9px 0 0 1px;
+  	width: 270px;
+  	position: relative;
+    overflow: hidden;
+    padding-top: 5px;
+}
+.ts_text{
+    display: none;
+}
+/*ABOUT*/
+.about_{
+	position: absolute;
+	top: 566px;
+	height: 470px;
+	width: 480px;
+}
+.about_1,
+.about_2,
+.about_3{
+	height: 150px;
+	width: 419px;
+	margin: 0 auto;
+}
+.about_1{
+
+}
+.about_2{
+	margin-top: 7px;
+}
+.about_3{
+	margin-top: 11px;
+}
+.about_article span{
+    font-size: 16px;
+    width: 370px;
+    margin: 6px 0 0 0;
+    height: 76px;
+    position: relative;
+    overflow: hidden;
+}
+.about_article p{
+	font-size: 24px;
+  	line-height: 0.8;
+}
+.about_article{
+	margin: 0px 7px 0 52px;
+}
+.about_article a{
+	margin-right: -10px;
+	margin-top: 9px;
+}
+.about_2 .spryte{
+	background-position: -33px 0;
+}
+.about_3 .spryte{
+	background-position: -66px 0;
+}
+
+/*SECTION 3*/
+.section_3{
+	position: absolute;
+	top: 1131px;
+	height: 716px;
+	width: 480px;
+}
+.slider_2{
+	height: 307px;
+	width: 480px;
+	margin: 2px 0 0 2px;
+}
+.slider_2_article{
+	width: 417px;
+	height: 273px;
+	margin: 26px 0 0 40px;
+}
+.slider_2 img{
+	position: absolute;
+	top: 17px;
+	left: 16px;
+}
+.slider_2 p{
+	width: 250px;
+	height: 32px;
+	display: inline-block;
+	font-size: 30px;
+	line-height: 0.95;
+  margin: 27px 0 0 40px;
+
+}
+.slider_text{
+	height: 170px;
+	width: 355px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 11px 0 0 39px;
+	line-height: 1.5;
+}
+
+.recent_updates{
+	width: 338px;
+	height: 264px;
+	margin: 50px 0px 0 82px;
+}
+.update_1,
+.update_2,
+.update_3{
+	height: 50px;
+	width: 332px;
+}
+.update_1{
+	margin: 13px 0 0 0;
+}
+.update_2{
+	margin: 19px 0 0 0;
+}
+.update_3{
+	margin: 16px 0 0 0;
+}
+.ru_1{
+	width: 264px;
+	height: 37px;
+	position: relative;
+	overflow: hidden;
+}
+.recent_updates img{
+	float: left;
+	clear: left;
+	margin: 0 17px 0 0;
+}
+.ru_1{
+	font-size: 16px;
+  	font-family: "Open Sans";
+  	color: rgb(69, 69, 69);
+  	line-height: 1.5;
+  	text-align: left;
+  	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+  	/*width: 369px;*/
+  	height: 42px;
+}
+.ru_header{
+	font-weight: bold;
+}
+.more_blogs{
+	margin: 15px 0 0 0;
+}
+
+/*LOGOS*/
+.logos{
+	position: absolute;
+	top: 1909px;
+	background: url('../img/logos_480.png') center no-repeat;
+	width: 480px;
+	height: 154px;
+}
+
+/*PRE FOOTER*/
+.prefooter{
+	position: absolute;
+	top: 2181px;
+	margin: 0px auto 0 auto;
+	height: 520px;
+	width: 480px;
+}
+.pref_article_1,
+.pref_article_2,
+.pref_article_3{
+	height: 186px;
+	width: 480px;
+	margin-left: 17px;
+}
+}
+.pref_article_2{
+	margin: ;
+}
+.pref_article_3{
+	margin-left: ;
+}
+.pref_header{
+	font-size: 24px;
+  	font-family: "LeagueGothic";
+  	color: rgb(69, 69, 69);
+  	text-align: left;
+  	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+}
+.pref_text{
+	font-size: 16px;
+  	font-family: "Open Sans";
+  	color: rgb(120, 120, 120);
+  	line-height: 1.5;
+  	text-align: left;
+  	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+  	width: 446px;
+  	height: 100px;
+  	margin-top: 7px;
+  	display: block;
+  	position: relative;
+  	overflow: hidden;
+}
+
+/*FOOTER*/
+.footer {
+	position: absolute;
+	top: 2813px;
+	width: 480px;
+	height: 80px;
+}
+.footer_menu a{
+	font-size: 20px;
+  	font-family: "LeagueGothic";
+  	color: rgb(255, 255, 255);
+  	text-transform: uppercase;
+  	line-height: 1.686;
+  	text-align: left;
+  	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.footer_menu{
+	margin-left: 22px;
+}
+.footer_menu li{
+	float: left;
+
+}
+.f_home{
+	margin: 0 0px 0 0px;
+}
+.f_about{
+	margin: 0 0px 0 24px;
+}
+.f_blog{
+	margin: 0 0px 0 25px;
+}
+.f_products{
+	margin: 0 0px 0 25px;
+}
+.f_lorem{
+	margin: 0 0px 0 25px;
+}
+.f_dolor{
+	margin: 0 0 0 25px;
+}
+.f_span{
+  	margin: 52px 0px 0 0;
+  	display: block;
+    width: 480;
+    text-align: center;
+}
+.f_design{
+
+}
+.f_pingbull{
+  	font-weight: bold;
+}
+}

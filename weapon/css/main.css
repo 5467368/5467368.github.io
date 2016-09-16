@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.hide-element {
+    display: none;
+}
+.wrapper {
+    width: 1440px;
+    height: 1406px;
+    margin: 0 auto;
+    position: relative;
+    background: #e3e6ed;
+}
+
+/*Верхний бар*/
+.header-bar {
+    width: 100%;
+    height: 70px;
+    background: #363a46;
+}
+.header-bar-title {
+    width: 325px;
+    height: 70px;
+    background: #282b34;
+    margin-left: 110px;
+    position: relative;
+    display: inline-block;
+}
+.header-bar-title-ref {
+    display: inline-block;
+    line-height: 66px;
+    font-size: 34px;
+    letter-spacing: -0.8px;
+    margin-left: 30px;
+}
+.header-bar-title-name {
+
+}
+.header-bar-title-name-weapon {
+    color: #deef22;
+    font-family: "Exo2ExtraBold", Arial;
+}
+.header-bar-title-name-dot {
+    color: #ffffff;
+    font-family: "Exo2ExtraBold", Arial;
+    margin-left: -8px;
+}
+.header-bar-title-name-club {
+    color: #707584;
+    font-family: "Exo2Light", Arial;
+    margin-left: -6px;
+    font-size: 36px;
+}
+.header-bar-menu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+.header-bar-menu-triangle-big {
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 13px solid #4e525d;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.header-bar-menu-triangle-small {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #282b34;
+    position: absolute;
+    top: 32px;
+    right: 35px;
+}
+.header-bar-user {
+    position: relative;
+    width: 185px;
+    display: inline-block;
+    right: -325px;
+    top: 8px;
+}
+.header-bar-user-common {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.header-bar-user-notification {
+    background: url("../img/sprite.png") no-repeat #484c57;
+    margin-right: 11px;
+}
+.header-bar-user-massage {
+    background: url("../img/sprite.png") -40px 0 no-repeat #484c57;
+    margin-right: 11px;
+}
+.header-bar-user-more {
+    background: url("../img/sprite.png") -80px 0 no-repeat #484c57;
+}
+.header-bar-user-notification-number,
+.header-bar-user-massage-number{
+    background-color: rgb(222, 239, 34);
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+}
+.header-bar-user-notification-number span,
+.header-bar-user-massage-number span {
+    font-size: 13px;
+    font-family: "Exo2Bold", Arial;
+    color: rgb(51, 51, 51);
+}
+.header-bar-search {
+    position: absolute;
+    right: 111px;
+    top: 13px;
+}
+.header-bar-search input {
+    border-radius: 3px;
+    background-color: rgb(40, 43, 52);
+    left: 14px;
+    top: 15px;
+    width: 387px;
+    height: 40px;
+    padding-left: 15px;
+    border: rgb(40, 43, 52);
+    display: inline-flex;
+    font-size: 20px;
+    font-family: "Exo2Regular";
+    color: rgba(227, 230, 237, 0.749);
+}
+
+
+main {
+    height: 1200px;
+    position: relative;
+    top: 30px;
+}
+
+/*Баннеры*/
+.banners {
+    margin-left: 110px;
+}
+.banner-left {
+    height: 370px;
+    width: 804px;
+    display: inline-block;
+    background: url("../img/banner-left.jpg");
+    border-radius: 3px;
+    box-shadow: 0px 2px 6.88px 1.12px rgba(0, 0, 0, 0.2);
+}
+.banner-right {
+    height: 370px;
+    width: 385px;
+    display: inline-block;
+    /*background: url("../img/banner-right.jpg");*/
+    margin-left: 25px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 6.88px 1.12px rgba(0, 0, 0, 0.2);
+}
+.banner-right-user-best {
+    height: 270px;
+    width: 386px;
+    background-image: url("../img/user-best.jpg");
+    position: relative;
+}
+.banner-right-user-best-title {
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    font-size: 20px;
+    font-family: "Exo2Thin";
+    color: #ffffff;
+}
+.best {
+    color: rgb(222, 239, 34);
+}
+.user-name {
+    font-size: 16px;
+    font-family: "Exo2Thin";
+    color: rgb(222, 239, 34);
+    display: inline-block;
+    padding-left: 20px;
+    height: 18px;
+    background: url("../img/helms-sprite.png") no-repeat 0 2px;
+}
+.banner-right-user-best-info {
+    font-size: 16px;
+    font-family: "Exo2Thin";
+    color: rgb(222, 239, 34);
+    position: absolute;
+    bottom: 17px;
+    left: 15px;
+}
+.banner-right-user-city {
+    color: #fff;
+}
+.banner-right-user-info {
+    position: absolute;
+    color: rgb(222, 239, 34);
+    bottom: 14px;
+    left: 16px;
+}
+.banner-right-user-one {
+    height: 100px;
+    width: 128px;
+    background-image: url("../img/user1.jpg");
+    float: left;
+    position: relative;
+}
+.banner-right-user-two {
+    height: 100px;
+    width: 128px;
+    background-image: url("../img/user2.jpg");
+    float: left;
+    position: relative;
+}
+.banner-right-user-three {
+    height: 100px;
+    width: 129px;
+    background-image: url("../img/user3.jpg");
+    float: left;
+    position: relative;
+}
+
+/*Основное наполнение. 3 секции*/
+.main-body {
+    position: relative;
+    top: 26px;
+}
+
+/*Раздел "Сообщество"*/
+.community {
+    width: 282px;
+    float: left;
+    margin-left: 110px;
+}
+.community-button {
+    height: 50px;
+    border-radius: 3px;
+    background-color: rgb(54, 58, 70);
+    box-shadow: 0px 2px 6.88px 1.12px rgba(0, 0, 0, 0.3);
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Exo2Regular";
+    color: rgb(222, 239, 34);
+}
+.community-best-club {
+    width: 282px;
+    height: 283px;
+    background: url("../img/best-club.jpg");
+    border-radius: 3px;
+    box-shadow: 0px 2px 6.88px 1.12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+.community-events {
+    margin-top: 24px;
+}
+.community-events-title {
+    font-size: 28px;
+    font-family: "Exo2Regular", Arial;
+    color: rgb(54, 58, 70);
+    text-align: left;
+    line-height: 0.786;
+}
+.community-events-list {
+    margin-top: 15px;
+}
+.community-events-list li {
+    list-style: none;
+    height: 110px;
+    border-top: 2px solid rgba(54, 58, 70, 0.2);
+}
+.community-events-list-body {
+    padding: 15px 0 15px 0;
+}
+.community-events-list-body-img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    background: url("../img/events.jpg");
+    box-shadow: 0px 2px 6.88px 1.12px rgba(0, 0, 0, 0.2);
+}
+.community-events-list-body-title {
+    font-size: 16px;
+    font-family: "Exo2Bold", Arial;
+    color: rgb(54, 58, 70);
+    line-height: 1;
+    height: 22px;
+}
+.community-events-list-body-num {
+    font-size: 14px;
+    font-family: "Exo2Regular", Arial;
+    line-height: 20px;
+    border-radius: 3px;
+    background-color: #d1d4dc;
+    width: 102px;
+    height: 20px;
+    margin-left: 95px;
+    text-align: center;
+}
+.community-events-list-body-city,
+.community-events-list-body-date {
+    font-size: 14px;
+    font-family: "Exo2Regular";
+    color: rgba(54, 58, 70, 0.6);
+    line-height: 1.8;
+    height: 18px;
+}
+
+/*Раздел "Активность*/
+.activity {
+    width: 386px;
+    float: right;
+    margin-right: 110px;
+}
+.activity-title {
+    font-size: 28px;
+    font-family: "Exo2Regular", Arial;
+    color: rgb(54, 58, 70);
+    margin-top: 5px;
+}
+.activity-list {
+    margin-top: 9px;
+}
+.activity-list li {
+    list-style: none;
+    height: 70px;
+    border-top: 2px solid rgba(54, 58, 70, 0.2);
+}
+.activity-list-body {
+    padding: 15px 0 15px 0;
+    height: 40px;
+}
+.activity-list-body-img {
+    float: left;
+    border-radius: 3px;
+    background-color: rgb(54, 58, 70);
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.activity-list-body-text {
+    font-size: 14px;
+    font-family: "Exo2Regular", Arial;
+    color: rgb(54, 58, 70);
+    line-height: 1.286;
+    margin-right: 15px;
+}
+.activity-list-body-text a {
+    font-family: "Exo2Bold", Arial;
+}
+
+/*Раздел "Новости"*/
+.news {
+    float: left;
+    width: 492px;
+    margin-left: 29px;
+}
+.news-title {
+    font-size: 28px;
+    font-family: "Exo2Regular", Arial;
+    color: rgb(54, 58, 70);
+    margin-top: 5px;
+    margin-left: 2px;
+    padding-bottom: 9px;
+    border-bottom: 2px solid rgba(54, 58, 70, 0.2);
+}
+.news-body {
+    position: relative;
+    top: 7px;
+    height: 517px;
+    width: 492px;
+    overflow: hidden;
+}
+.news-body ul {
+    list-style: none;
+    width: 10000px;
+    position: relative;
+}
+.news-body li {
+    float: left;
+    width: 492px;
+    position: relative;
+}
+.news-body-title {
+    font-size: 28px;
+    font-family: "Exo2Bold";
+    color: rgb(54, 58, 70);
+}
+.news-body-info-name {
+    font-size: 16px;
+    font-family: "Exo2Regular";
+    color: rgba(54, 58, 70, 0.6);
+    display: inline-block;
+    padding-left: 20px;
+    height: 18px;
+    background: url("../img/helms-sprite.png") no-repeat -25px 2px;
+}
+.news-body-info-date {
+    font-size: 16px;
+    font-family: "Exo2Regular", Arial;
+    color: rgba(54, 58, 70, 0.6);
+    line-height: 2.1;
+    margin-left: 21px;
+}
+.news-body-info-img {
+    width: 15px;
+    height: 15px;
+    background: url("../img/helms-sprite.png") no-repeat -25px 0;
+    position: absolute;
+    top: 43px;
+    left: 1px;
+}
+.news-body-info-date {
+    margin: 0;
+}
+.news-body-img {
+    width: 492px;
+    height: 278px;
+    background-image: url("../img/news-img.jpg");
+    border-radius: 3px;
+    box-shadow: 0px 2px 6.88px 1.12px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+.news-body-text {
+    font-size: 16px;
+    font-family: "Exo2Regular";
+    color: rgb(54, 58, 70);
+    line-height: 1.375;
+    margin-top: 9px;
+}
+.news-bottom {
+    border-bottom: 2px solid rgba(54, 58, 70, 0.2);
+    margin-top: 19px;
+    margin-left: 2px;
+}
+.news-body-arrow-prev {
+    position: absolute;
+    top: 177px;
+    left: 0;
+    background-image: url("../img/prev.png");
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.news-body-arrow-next {
+    position: absolute;
+    top: 177px;
+    right: 0;
+    background-image: url("../img/next.png");
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+/*Футер*/
+footer {
+    position: absolute;
+    background-color: rgb(54, 58, 70);
+    bottom: 0;
+    width: 1440px;
+    height: 100px;
+}
+footer div {
+    font-size: 14px;
+    font-family: "Exo2Regular";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 13px;
+    top: 38px;
+    position: relative;
+}

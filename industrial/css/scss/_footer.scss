@@ -1,0 +1,135 @@
+//SCSS File
+.prefooter {
+    position: absolute;
+    top: 2142px;
+
+    li {
+        display: inline-block;
+    }
+    a {
+        display: block;
+        height: 65px;
+        background: url("../../img/partners.png") no-repeat;
+    }
+    a:hover {
+        background-position-y: -65px;
+    }
+    .partner1 {
+        width: 110px;
+        margin-left: 16px;
+        background-position-x: -17px;
+    }
+    .partner2 {
+        width: 110px;
+        background-position-x: -208px;
+        margin-left: 78px;
+    }
+    .partner3 {
+        width: 160px;
+        background-position-x: -409px;
+        margin-left: 87px;
+    }
+    .partner4 {
+        width: 110px;
+        background-position-x: -645px;
+        margin-left: 73px;
+    }
+    .partner5 {
+        width: 125px;
+        background-position-x: -840px;
+        margin-left: 81px;
+    }
+    .partner6 {
+        width: 110px;
+        background-position-x: -1026px;
+        margin-left: 58px;
+    }
+}
+
+.bg3 {
+    position: absolute;
+    top: 2292px;
+    background-color: #2a2d32;
+    height: 325px;
+    width: 100%;
+}
+.bg4 {
+    position: absolute;
+    top: 2617px;
+    background-color: #35383c;
+    height: 60px;
+    width: 100%;
+}
+.footer {
+    position: relative;
+    top: 1821px;
+
+    :last-child {
+        margin-right: 0;
+    }
+    a {
+        font-size: 13px;
+        font-family: "Arial";
+        color: rgba(255, 255, 255, 0.302);
+    }
+    a:hover {
+        color: #248cec;
+    }
+    p {
+        font-size: 16px;
+        font-family: "Ubuntu", Arial;
+        color: rgb(255, 255, 255);
+    }
+}
+.fm-main {
+    display: inline-block;
+    width: 255px;
+    margin: 58px 40px 0 0;
+}
+.sub-menu {
+    margin-top: 31px;
+
+    li {
+        height: 35px;
+        border-bottom: 1px solid #393939;
+        line-height: 35px;
+    }
+    :last-child {
+        border-bottom: none;
+    }
+}
+
+.under-footer {
+    position: relative;
+    top: 1915px;
+    font-size: 13px;
+    font-family: "Arial";
+    color: rgba(255, 255, 255, 0.2);
+
+    a {
+        color: rgba(255, 255, 255, 0.2);
+        background: url("../../img/email.png") no-repeat left center;
+        padding-left: 30px;
+        margin-left: 40px;
+
+
+    }
+    a:hover {
+        color: #248cec;
+    }
+    span {
+        display: inline-block;
+    }
+}
+.copyright {
+    float: right;
+}
+.location {
+    background: url("../../img/location.png") no-repeat left center;
+    padding-left: 25px;
+}
+.phone {
+    background: url("../../img/iphone.png") no-repeat left center;
+    padding-left: 20px;
+    margin-left: 30px;
+}

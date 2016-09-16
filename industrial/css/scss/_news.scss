@@ -1,0 +1,167 @@
+//SCSS File
+.bg2 {
+    position: absolute;
+    top: 1515px;
+    width: 100%;
+    height: 540px;
+    background-color: #f7f7f7;
+}
+.news-and-banners {
+    position: absolute;
+    top: 1515px;
+}
+.news-banners {
+    display: inline-block;
+
+    .header {
+        font-size: 24px;
+        font-family: "Ubuntu", Arial;
+        color: rgb(42, 45, 50);
+        position: absolute;
+        font-weight: 600;
+    }
+}
+.news-section {
+    height: 400px;
+    width: 580px;
+    float: left;
+
+    .header {
+        top: 54px;
+    }
+}
+.news-article {
+    width: 560px;
+    height: 150px;
+    position: relative;
+    //top: 45px;
+
+    img {
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        float: left;
+        clear: both;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(42, 45, 50);
+    }
+    a:hover {
+        color: rgb(36, 140, 236);
+    }
+}
+.small-article{
+    position: absolute;
+    width: 380px;
+    left: 185px;
+    top: 50px;
+    height: 150px;
+    overflow: hidden;
+}
+.news-header {
+    font-size: 15px;
+    font-family: "Ubuntu";
+    font-weight: 600;
+}
+.news-article1 {
+    top: 78px;
+}
+.news-article2 {
+    top: 108px;
+}
+.month,
+.date {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    left: -17px;
+}
+.month {
+    background-color: rgb(36, 140, 236);
+    top: 62px;
+    color: white;
+}
+.date {
+    background-color: rgb(244, 182, 13);
+    top: 102px;
+    font-weight: 600;
+}
+.panel-text,
+.news-article-text,
+.news-article-info {
+    font-size: 13px;
+    font-family: "Arial";
+    color: rgb(157, 157, 157);
+
+    a {
+        color: rgb(36, 140, 236);
+    }
+}
+.news-article-text {
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+//banners-section
+.banners-section {
+    position: relative;
+    height: 400px;
+    width: 565px;
+    top: 54px;
+    left: 17px;
+    float: right;
+
+    .header {
+
+    }
+    ul {
+        list-style: none;
+        margin-top: 73px;
+    }
+    li {
+        margin-top: 4px;
+    }
+}
+.banner-slide {
+    font-family: "Ubuntu", Arial;
+    cursor: pointer;
+    background-color: white;
+
+    :first-child {
+        font-size: 20px;
+        display: inline-block;
+        height: 38px;
+        width: 38px;
+        //background-color: white;
+        line-height: 33px;
+        text-align: center;
+        border: 1px solid gray;
+    }
+    :last-child {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 600;
+        display: inline-block;
+        height: 38px;
+        width: 518px;
+        //background-color: white;
+        border: 1px solid gray;
+        line-height: 38px;
+    }
+}
+.banner-slide-selected {
+    background-color: #f4b60d;
+}
+.panel-text {
+    width: 520px;
+    height: 100px;
+    overflow: hidden;
+    display: none;
+    float: right;
+    padding: 20px 0 20px 45px;
+    background-color: #f7f7f7;
+}

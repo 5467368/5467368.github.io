@@ -1,0 +1,364 @@
+<html>
+ 	<head>
+		<title>Главная</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/styles.css">
+	</head> 
+ 	<body>
+ 		<div class="page">
+ 			<header>
+ 				<div class="phones">
+ 					<img src="img/tube.png">
+ 					<span>(044)123-45-67 (044)567-89-10</span>
+ 				</div>
+ 				<div class="login">
+ 					<img src="img/login.png">
+ 					<form method="" action="">
+ 						<div>
+ 							<input type="text" name="login" placeholder="логин" required></input>
+ 							<input type="password" name="password" placeholder="пароль" required></input>
+ 							<button class="login-submit" type="submit">вход</button>
+ 						</div>
+ 					</form>
+ 					<span>&nbsp;|&nbsp;</span>
+ 					<div class="reg">
+ 						<a href="#">регистрация</a>
+					</div>
+					<div class="fogot">
+ 						<a href="fogot">забыли пароль?</a>
+ 					</div>
+ 				</div>
+				<div class="small-navi">
+					<a href="" title="Главная"><img src="img/home.png"></a>
+					<a href=""><img src="img/map.png"></a>
+					<a href=""><img src="img/letter.png"></a>
+				</div>
+				<div class="banner">
+					<a href="index.html" title="Главная"><img src="img/banner.png"></a>
+				</div>
+ 			</header>
+
+	<!--Top MENU-->
+ 			<nav>
+ 				<ul>
+ 					<li><a href="">О КОМПАНИИ</a></li>
+ 					<li><a href="">ОПЛАТА</a></li>
+ 					<li><a href="">ДОСТАВКА</a></li>
+ 					<li><a href="">СТАТЬИ</a></li>
+ 					<li><a href="">КОНТАКТЫ</a></li>
+ 				</ul>
+ 				<div class="korzina">
+ 					<a href="" title="Корзина"><img src="img/korzina.png" height="17" width="21"></a>
+ 					<span>&nbsp;&nbsp;товаров:</span>
+					<span style="color:#0d5a8f;">0</span>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;на сумму:&nbsp;</span>
+					<span style="color:#0d5a8f;">0,00 грн</span>
+				</div>
+ 			</nav>
+
+			<!--Панель фильтров-->
+			<section class="filters-panel">
+				<form class="filters-panel-form" id="form1">
+					<span class="filter-title">ПОИСК ШИН:</span>
+					<span class="filter-size">размер</span>
+					<select class="select-width" name="width">
+						<option value="">Все</option>
+						<option value="155">155</option>
+						<option value="165">165</option>
+						<option value="175">175</option>
+						<option value="185">185</option>
+						<option value="195">195</option>
+					</select>
+
+					<span class="filter-size">/</span>
+					<select class="select-height" name="height">
+						<option value="">Все</option>
+						<option value="55">55</option>
+						<option value="60">60</option>
+						<option value="65">65</option>
+						<option value="70">70</option>
+						<option value="75">75</option>
+						<option value="80">80</option>
+					</select>
+
+					<span class="filter-size" style="margin-left: 20px;">диаметр</span>
+					<select class="select-diametr" name="diametr">
+						<option value="">Все</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+					</select>
+
+					<span class="filter-size" style="margin-left: 20px;">сезон</span>
+					<select class="select-season" name="season">
+						<option value="">Все</option>
+						<option value="Лето">Лето</option>
+						<option value="Зима">Зима</option>
+					</select>
+
+					<button class="filter-button" type="submit" id="b1">Поиск</button>
+				</form>
+
+			</section>
+
+ 			<div class="main-body">
+ 	<!--LEFT SIDEBAR-->
+ 				<aside class="catalog">
+ 					<div class="catalog-title">
+ 						<img src="img/list.png">
+ 						<span>КАТАЛОГ&nbsp;ПРОДУКЦИИ:</span>
+ 					</div>
+ 					<div class="shini">
+ 						<div class="shini-title">
+ 							<div class="krug"></div>
+ 							<span>ШИНЫ</span>
+ 						</div>
+ 						<div>
+ 							<ul type="circle" class="left-side-diametr">
+ 								<li><a href="#">14"</a></li>
+ 								<li><a href="#">15"</a></li>
+ 								<li><a href="#">16"</a></li>
+								<li><a href="#">17"</a></li>
+								<li><a href="#">18"</a></li>
+ 							</ul>
+ 						</div>
+ 					</div>
+ 					<div class="diski">
+ 						<div class="diski-title">
+ 							<div class="krug"></div>
+ 							<span>ДИСКИ</span>
+ 						</div>
+ 						<div>
+ 							<ul type="circle">
+ 								<li>Размер</li>
+ 								<li>Размер</li>
+ 								<li>Размер</li>
+ 								<li>Размер</li>
+ 							</ul>
+ 						</div>
+ 					</div>
+ 					<div class="bolti">
+ 						<div class="bolti-title">
+ 							<div class="krug"></div>
+ 							<span>БОЛТЫ</span>
+ 						</div>
+ 						<div>
+ 							<ul type="circle">
+ 								<li>Параметр</li>
+ 								<li>Параметр</li>
+ 								<li>Параметр</li>
+ 								<li>Параметр</li>
+ 							</ul>
+ 						</div>
+ 					</div>
+ 				</aside>
+
+	<!--RIGHT SIDEBAR-->
+ 				<aside class="brends">
+ 					<div class="brends-title">
+ 						<img src="img/list.png">
+ 						<span>БРЕНДЫ:</span>
+ 					</div>
+
+ 					<div class="shini-b">
+ 						<div class="shini-title">
+ 							<div class="krug"></div>
+ 							<span>ШИНЫ</span>
+ 						</div>
+ 					</div>
+
+ 					<form id="form2">
+
+					 	<div class="checkbox">
+					 		<input type="checkbox" id="checkbox1" style="" value="Amtel">
+					 		<label for="checkbox1">Amtel</label>
+					 	</div>
+					 	<div class="checkbox">
+					 		<input type="checkbox" id="checkbox2" style="" value="Dunlop">
+					 		<label for="checkbox2">Dunlop</label>
+					 	</div>
+					 	<div class="checkbox">
+					 		<input type="checkbox" id="checkbox3" style="" value="Nokian">
+					 		<label for="checkbox3">Nokian</label>
+					 	</div>
+						<div class="checkbox">
+							<input type="checkbox" id="checkbox4" style="" value="Pirelli">
+							<label for="checkbox4">Pirelli</label>
+						</div>
+
+					 	<div class="diski-b">
+ 							<div class="diski-title">
+ 								<div class="krug"></div>
+ 								<span>ДИСКИ</span>
+ 							</div>
+ 						</div>
+ 						<div class="cb-diski">
+	 						<div class="checkbox">
+						 		<input type="checkbox" id="checkbox5" style="" disabled>
+						 		<label for="checkbox5">Бренд</label>
+						 	</div>
+						 	<div class="checkbox">
+						 		<input type="checkbox" id="checkbox6" style="" disabled>
+						 		<label for="checkbox6">Бренд</label>
+						 	</div>
+						 	<div class="checkbox">
+						 		<input type="checkbox" id="checkbox7" style="" disabled>
+						 		<label for="checkbox7">Бренд</label>
+						 	</div>
+						</div>
+					 	<div class="sendButton">
+					 		<button type="submit" id="b2">
+					 			ВЫБРАТЬ
+					 		</button>
+					 	</div>
+					 </form>
+ 				</aside>
+ 			</div>
+ 	<!--CENTER-->
+ 			<main class="center clearfix">
+ 				<section class="raw-1">
+ 					<!--<a href="">-->
+	 					<figure class="tovar">
+	 						<figcaption>
+	 							<p>GoodYear</p>
+	 							<span class="name">Ultra Grip Extreme</span>
+							</figcaption>
+	 							<div class="window">
+	 								<img src="img/koleso.jpg">
+	 							</div>
+	 							<span class="cena">120грн.</span>
+	 					</figure>
+	 				<!--</a>-->
+	 				<!--<a href="">-->
+	 					<figure class="tovar">
+	 						<figcaption>
+	 							<p>GoodYear</p>
+	 							<span class="name">Ultra Grip Extreme</span>
+							</figcaption>
+	 							<div class="window">
+	 								<img src="img/koleso.jpg">
+	 							</div>
+	 							<span class="cena">120грн.</span>
+	 					</figure>
+	 				<!--</a>-->
+	 				<!--<a href="">-->
+	 					<figure class="tovar">
+	 						<figcaption>
+	 							<p>GoodYear</p>
+	 							<span class="name">Ultra Grip Extreme</span>
+							</figcaption>
+	 							<div class="window">
+	 								<img src="img/koleso.jpg">
+	 							</div>
+	 							<span class="cena">120грн.</span>
+	 					</figure>
+	 				<!--</a>-->
+ 				</section>
+ 				<section class="raw-2">
+ 					<!--<a href="">-->
+	 					<figure class="tovar">
+	 						<figcaption>
+	 							<p>GoodYear</p>
+	 							<span class="name">Ultra Grip Extreme</span>
+							</figcaption>
+	 							<div class="window">
+	 								<img src="img/koleso.jpg">
+	 							</div>
+	 							<span class="cena">120грн.</span>
+	 					</figure>
+	 				<!--</a>-->
+	 				<!--<a href="">-->
+	 					<figure class="tovar">
+	 						<figcaption>
+	 							<p>GoodYear</p>
+	 							<span class="name">Ultra Grip Extreme</span>
+							</figcaption>
+	 							<div class="window">
+	 								<img src="img/koleso.jpg">
+	 							</div>
+	 							<span class="cena">120грн.</span>
+	 					</figure>
+	 				<!--</a>-->
+	 				<!--<a href="">-->
+	 					<figure class="tovar">
+	 						<figcaption>
+	 							<p>GoodYear</p>
+	 							<span class="name">Ultra Grip Extreme</span>
+							</figcaption>
+	 							<div class="window">
+	 								<img src="img/koleso.jpg">
+	 							</div>
+	 							<span class="cena">120грн.</span>
+	 					</figure>
+	 				<!--</a>-->
+ 				</section>
+ 				<section class="raw-3">
+ 					<!--<a href="">-->
+	 					<figure class="tovar">
+	 						<figcaption>
+	 							<p>GoodYear</p>
+	 							<span class="name">Ultra Grip Extreme</span>
+							</figcaption>
+	 							<div class="window">
+	 								<img src="img/koleso.jpg">
+	 							</div>
+	 							<span class="cena">120грн.</span>
+	 					</figure>
+	 				<!--</a>-->
+	 				<!--<a href="">-->
+	 					<figure class="tovar">
+	 						<figcaption>
+	 							<p>GoodYear</p>
+	 							<span class="name">Ultra Grip Extreme</span>
+							</figcaption>
+	 							<div class="window">
+	 								<img src="img/koleso.jpg">
+	 							</div>
+	 							<span class="cena">120грн.</span>
+	 					</figure>
+	 				<!--</a>-->
+	 				<!--<a href="">-->
+	 					<figure class="tovar">
+	 						<figcaption>
+	 							<p>GoodYear</p>
+	 							<span class="name">Ultra Grip Extreme</span>
+							</figcaption>
+	 							<div class="window">
+	 								<img src="img/koleso.jpg">
+	 							</div>
+	 							<span class="cena">120грн.</span>
+	 					</figure>
+	 				<!--</a>	-->
+ 				</section>
+ 			</main>
+ 			<!--<div class="jumper">-->
+ 					<!--<a href="">&laquo;&nbsp;</a>-->
+ 					<!--<a href="">&lt;&nbsp;</a>-->
+ 					<!--<a href="">1</a>-->
+ 					<!--<span>&hellip;</span>-->
+ 					<!--<a href="">2</a>-->
+ 					<!--<span>&hellip;</span>-->
+ 					<!--<a href="">3</a>-->
+ 					<!--<span>&hellip;</span>-->
+ 					<!--<a href="">4</a>-->
+ 					<!--<a href="">&nbsp;&gt;</a>-->
+ 					<!--<a href="">&nbsp;&raquo;</a>-->
+			<!--</div>-->
+ 	<!--F O O T E R-->
+ 			<footer>
+ 				<div class="f-menu">
+ 					<p>
+ 						<a href="">О компании</a>
+ 						<a href="">Доставка</a>
+ 						<a href="">Статьи</a>
+ 						<a href="" style="border: none;">Контакты</a>
+ 					</p>
+ 				</div>
+ 			</footer>
+ 		</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+ 	</body>
+</html>
