@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+a {
+  color: white;
+}
+body {
+  width: 100%;
+}
+.wrapper {
+  width: 100%;
+  background: url("../img/bg.png") bottom no-repeat #15b284;
+}
+.container {
+  margin: 0 auto;
+  padding: 40px 6px;
+}
+.row-logo-logo {
+  display: inline-block;
+  width: 279px;
+}
+.home-logo {
+  background: url("../img/logo.png") no-repeat;
+  display: inline-block;
+  width: 225px;
+  height: 33px;
+  margin-top: 13px;
+}
+.row-logo-text {
+  border-left: 1px solid #000;
+  padding-left: 40px;
+}
+.menu {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 2.118;
+  margin-top: 40px;
+}
+.bottom {
+  margin-top: 70px;
+}
+.mobile-icon {
+  width: 148px;
+  height: 50px;
+  display: inline-block;
+  margin-left: 15px;
+}
+.mobile-ios {
+  background: url("../img/iOS.png") no-repeat;
+}
+.mobile-android {
+  background: url("../img/drioid.png") no-repeat;
+}
+.bottom-mobile {
+  padding: 0;
+}
+.mobile-apps {
+  width: 356px;
+  margin: 0 auto;
+  float: left;
+}
+.social-ul {
+  list-style: none;
+  text-align: center;
+}
+.social-ul-li {
+  display: inline-block;
+}
+.social-ul-li a {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.social-ul-li .vk {
+  background: url("../img/social.png");
+}
+.social-ul-li .fb {
+  background: url("../img/social.png") 184px;
+}
+.social-ul-li .tw {
+  background: url("../img/social.png") 116px;
+}
+.social-ul-li .google {
+  background: url("../img/social.png") 48px;
+}
+.bottom-intsite-wrapper .bottom-intsite-text {
+  display: inline-block;
+  height: 50px;
+  width: 130px;
+  font-size: 13px;
+  line-height: 1.308;
+  padding-right: 15px;
+  border-right: 1px solid black;
+  float: right;
+}
+.bottom-intsite-wrapper .bottom-intsite-logo {
+  display: inline-block;
+  height: 48px;
+  width: 53px;
+  background: url("../img/intlogo.png") no-repeat left;
+  margin-left: 15px;
+  float: right;
+}
+@media (max-width: 991px) {
+  .mobile-apps {
+    float: none;
+  }
+  .social-ul {
+    float: left;
+    margin-top: 15px;
+  }
+  .bottom-intsite {
+    margin-top: 15px;
+  }
+}

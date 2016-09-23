@@ -19,7 +19,7 @@ body{
 	margin: 0 auto;
 	width: 100%;
 	height: 1064px;
-	background: url("img/background_big.jpg");
+	background: url("../img/background_big.jpg");
 	background-size: cover;
 }
 .top{
