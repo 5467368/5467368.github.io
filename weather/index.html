@@ -9,77 +9,21 @@
 </head>
 
 <body>
-    <div class="wrappper" ng-controller="mainController as mainCtrl" ng-init="mainCtrl.weatherManagerInit()">
+<div class="wrappper" ng-controller="mainController as mainCtrl" ng-init="mainCtrl.weatherManagerInit()">
 
+    <search-template></search-template>
 
-        <div class="col-lg-3">
-            <div class="input-group">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button" ng-click="mainCtrl.searchCity()">Go!</button>
-                </span>
-                <input type="search" class="form-control" placeholder="Search for..." ng-keyup="$event.keyCode == 13 && (mainCtrl.searchCity())" ng-model="mainCtrl.searchByCityName">
-            </div><!-- /input-group -->
-        </div><!-- /.col-lg-6 -->
+    <div class="search-result"></div>
 
-        <div class="search-result">
-            <h4 class="search-result-cityname">{{mainCtrl.newCity.name}} {{mainCtrl.newCity.sys.country}}</h4>
-            <button type="button" class="btn btn-default" style="vertical-align: top;" ng-show="mainCtrl.newCity.name" ng-click="mainCtrl.addNewCity(mainCtrl.newCity.name)">
-                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-            </button>
-            <button type="button" class="btn btn-default" style="vertical-align: top;" ng-show="!reverse" ng-click="reverse = true">  <!---->
-                <span class="glyphicon glyphicon-sort-by-alphabet" aria-hidden="true"></span>
-            </button>
-            <button type="button" class="btn btn-default" style="vertical-align: top;" ng-hide="!reverse" ng-click="reverse = false">  <!---->
-                <span class="glyphicon glyphicon-sort-by-alphabet-alt" aria-hidden="true"></span>
-            </button>
-        </div>
+    <div class="filter-input"></div>
 
-        <div class="filter-input">
-            <div class="col-lg-6 form-control-my">
-                <div class="input-group">
-                    <input type="search" class="form-control " placeholder="Filter for..." ng-model="filterName">
-                    <!--<span class="input-group-btn">-->
-                    <!--<button class="btn btn-default" type="button">Go!</button>-->
-                    <!--</span>-->
-                </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-        </div>
+    <div class="city-list"></div>
 
-        <div class="city-list">
-            <div class="listgroup">
-                <div class="list-group-item list-group-item-custom" ng-repeat="city in mainCtrl.list | orderBy:'name':reverse | filter: filterName track by $index">
-                    <h4 class="list-group-item-heading">{{city.name}} {{city.sys.country}}</h4>
-                    <img ng-src="http://openweathermap.org/img/w/{{city.weather[0].icon}}.png">
-                    <span>{{city.weather[0].description}}</span>
-                    <p class="list-group-item-text">
-                        Температура: {{city.main.temp}}&deg;C
-                    </p>
-                    <!--<p class="list-group-item-text">-->
-                        <!--Температура мин.: {{city.main.temp_min}}&deg;C-->
-                    <!--</p>-->
-                    <!--<p class="list-group-item-text">-->
-                        <!--Температура макс.: {{city.main.temp_max}}&deg;C-->
-                    <!--</p>-->
-                    <p class="list-group-item-text">
-                        Ветер: {{city.wind.speed}} м/с
-                    </p>
-                    <p class="list-group-item-text">
-                        Влажность: {{city.main.humidity}}%
-                    </p>
-                    <!--<p class="list-group-item-text">-->
-                        <!--Индекс: {{city.cityIndex}}-->
-                    <!--</p>-->
-                    <p class="glyphicon glyphicon-refresh glyph glyph-refresh" aria-hidden="true" ng-click="mainCtrl.refreshCity(city.cityIndex)"></p>
-                    <p class="glyphicon glyphicon-remove-circle glyph glyph-remove" aria-hidden="true" ng-click="mainCtrl.removeCity(city.cityIndex)"></p>
-                </div>
-            </div>
-        </div>
+</div>
 
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/main_.js"></script>
 </body>
 </html>
