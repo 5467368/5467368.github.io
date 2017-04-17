@@ -1,0 +1,18 @@
+<div class="listgroup">
+    <div class="list-group-item list-group-item-custom" ng-repeat="city in mainCtrl.cities | orderBy:'name':reverse | filter: filterName track by $index">
+        <h4 class="list-group-item-heading">{{city.name}} {{city.sys.country}}</h4>
+        <img ng-src="http://openweathermap.org/img/w/{{city.weather[0].icon}}.png">
+        <span>{{city.weather[0].description}}</span>
+        <p class="list-group-item-text">
+            Температура: {{city.main.temp}}&deg;C
+        </p>
+        <p class="list-group-item-text">
+            Ветер: {{city.wind.speed}} м/с
+        </p>
+        <p class="list-group-item-text">
+            Влажность: {{city.main.humidity}}%
+        </p>
+        <p class="glyphicon glyphicon-refresh glyph glyph-refresh" aria-hidden="true" ng-click="mainCtrl.refreshCity(city.index)"></p>
+        <p class="glyphicon glyphicon-remove-circle glyph glyph-remove" aria-hidden="true" ng-click="mainCtrl.removeCity(city.index)"></p>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<h4 class="search-result-cityname">{{mainCtrl.newCity.name}} {{mainCtrl.newCity.sys.country}}</h4>
+<button type="button" class="btn btn-default" style="vertical-align: top;" ng-show="mainCtrl.newCity.name" ng-click="mainCtrl.addNewCity(mainCtrl.newCity)">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+</button>
+<button type="button" class="btn btn-default" style="vertical-align: top;" ng-show="!reverse" ng-click="reverse = true">  <!---->
+    <span class="glyphicon glyphicon-sort-by-alphabet" aria-hidden="true"></span>
+</button>
+<button type="button" class="btn btn-default" style="vertical-align: top;" ng-hide="!reverse" ng-click="reverse = false">  <!---->
+    <span class="glyphicon glyphicon-sort-by-alphabet-alt" aria-hidden="true"></span>
+</button>

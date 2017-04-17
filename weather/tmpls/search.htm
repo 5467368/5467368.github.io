@@ -1,0 +1,8 @@
+<div class="col-lg-3">
+    <div class="input-group">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" ng-click="mainCtrl.searchCity()">Go!</button>
+                </span>
+        <input type="search" class="form-control" placeholder="Search for..." ng-keyup="$event.keyCode == 13 && (mainCtrl.searchCity())" ng-model="mainCtrl.searchByCityName">
+    </div><!-- /input-group -->
+</div><!-- /.col-lg-6 -->
